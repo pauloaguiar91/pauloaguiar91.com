@@ -1,0 +1,122 @@
+body {
+	    background-image: url(http://www.pauloaguiar91.com/img/bg.jpg);
+background-size: 100%;
+        background-position: top left;
+        background-attachment: fixed
+}
+
+p {
+	color:white;
+	font-family: Arial;
+}
+
+table {
+	text-align: center;
+    border:2px solid blue;
+    width:100%;
+    height: 15%;
+    font-family:Verdana;
+}
+
+}
+
+
+li {
+	font-family:Verdana;
+	font-size: 15px;
+}
+
+h1 {
+	color:White;
+	font-family: Verdana;
+	background-color: #6600FF;
+    border:1px solid white
+}
+
+div a {
+	color:black;
+	border:1px;
+}
+
+ul {
+	color:white;
+	font-family:Arial;
+	font-size: 18px;
+}
+
+h5 {
+	color:white;
+	font-family: Tahoma;
+	text-align: center;
+	font-size: 400%;
+}
+
+a:hover{
+	color:white;
+	background-color:#6688CC;
+}
+
+a:visited {
+	color:White;
+	    text-decoration: none
+}
+
+a:link{
+    color:White;
+    text-decoration: none
+}
+
+
+#seperator {
+	width:100%;
+	height: 3px;
+	background-color: black
+}
+
+#tableC {
+	text-align: center;
+    border:1px solid blue;
+    width:100%;
+    height:40px;
+    font-family:Verdana
+}
+
+#navbar {
+	text-align: center;
+	background-color: #6600FF;
+    border:2px solid black;
+    width:100%;
+    height: 60px;
+    font-family:Impact;
+    font-size:30px;
+}
+
+#home {
+	text-align: left;
+	height:90%;
+	width:80%;
+	background-color: #6688CC;
+	border-radius: 1px;
+	font-family: Verdana;
+
+}
+
+#latestupdates {
+	color:White;
+	font-family: Verdana;
+	background-color: #6600FF;
+    border:2px solid black	
+}
+
+.drag {
+	 width: 370px;
+	  height: 350px; 
+	  padding: 0.5em
+}
+
+.head {
+	color:White;
+	font-family: Verdana;
+	background-color: #6600FF;
+    border:1px solid white
+}
