@@ -6,7 +6,7 @@ background-size: 100%;
 }
 
 p {
-	color:white;
+	color:black;
 	font-family: Arial;
 }
 
@@ -18,8 +18,6 @@ table {
     font-family:Verdana;
 }
 
-}
-
 
 li {
 	font-family:Verdana;
@@ -29,8 +27,9 @@ li {
 h1 {
 	color:White;
 	font-family: Verdana;
-	background-color: #6600FF;
-    border:1px solid white
+	background-color: #0066cc;
+    border:1px solid white;
+	border-radius: 5px;
 }
 
 div a {
@@ -39,7 +38,6 @@ div a {
 }
 
 ul {
-	color:white;
 	font-family:Arial;
 	font-size: 18px;
 }
@@ -75,15 +73,14 @@ a:link{
 
 #tableC {
 	text-align: center;
-    border:1px solid blue;
+    border:2px solid white;
     width:100%;
-    height:40px;
     font-family:Verdana
 }
 
 #navbar {
 	text-align: center;
-	background-color: #6600FF;
+	background-color: #3399ff;
     border:2px solid black;
     width:100%;
     height: 60px;
@@ -95,9 +92,10 @@ a:link{
 	text-align: left;
 	height:90%;
 	width:80%;
-	background-color: #6688CC;
-	border-radius: 1px;
+	background-color: #cccccc;
+	border-radius: 3px;
 	font-family: Verdana;
+	border: 2px solid black;
 
 }
 
@@ -111,12 +109,13 @@ a:link{
 .drag {
 	 width: 370px;
 	  height: 350px; 
-	  padding: 0.5em
+	  padding: 0.5em;
+	  border:1px solid #3399ff;
 }
 
 .head {
 	color:White;
 	font-family: Verdana;
-	background-color: #6600FF;
+	background-color: #0066cc;
     border:1px solid white
 }
