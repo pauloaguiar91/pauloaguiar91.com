@@ -7,15 +7,22 @@ require_once('../scripts/config.php');
     $log = array();
     
     switch($function) {
+    
     	
     	 case('logIn'):
     	 if(file_exists('chat.txt')) {
     	 	$nickname = htmlentities(strip_tags($_POST['nickname']));
     	 	
     	 	if($nickname) {
-			 	fwrite(fopen('chat.txt', 'a'), "<i> <span>". $nickname . "</span>" . " has joined the chat" . "</i> \n");
+    	 		mysql_query("insert into online_users (username) values ('$nickname')");
+		 	
+		 		
+			 	$chat = fwrite(fopen('chat.txt', 'a'), "<i> <span>". $nickname . "</span>" . " has joined the chat" . "</i> \n");
+			 	fclose($chat);
 			 	
-			 	mysql_query("insert into online_users (username) values ('$nickname')");
+			 	$users =fwrite(fopen('users.txt', 'a'), $nickname . "\n");
+		 		fclose($users);
+			 	
 			 	
     	 	}
     	 }	
@@ -26,16 +33,55 @@ require_once('../scripts/config.php');
 
 	    	 	fwrite(fopen('chat.txt', 'a'), "<i> <span>". $nickname . "</span>" . " has left the chat" . "</i> \n");
 			 	
-			 	mysql_query("delete from online_users (username) values ('$nickname')");
+			 	mysql_query("DELETE FROM online_users WHERE (username)='$nickname';");
     	 
+    	 break;
+    	 
+    	 case('getState2'):
+    	 if(file_exists('users.txt')) {
+	    	   $lines2 = file('users.txt');
+
+    	 }
+    	      $log['state2'] = count($lines2);
+
     	 break;
     
     	 case('getState'):
         	 if(file_exists('chat.txt')){
                $lines = file('chat.txt');
         	 }
+        	 
              $log['state'] = count($lines); 
         	 break;	
+        	 
+         case('updateUsers'):
+         
+         $state = $_POST['state2'];
+        	if(file_exists('users.txt')){
+        	   $lines2 = file('users.txt');
+        	 }
+        	 $count =  count($lines2);
+        	 
+        	 if($state == $count){
+        		 $log['state'] = $state;
+        		 $log['users'] = false;
+        		 
+        		 }
+        		 else{
+        			 $users= array();
+        			 $log['state'] = $state + count($lines2) - $state;
+        			 foreach ($lines2 as $line_num => $line)
+                       {
+        				   if($line_num >= $state){
+                                $users[] =  $line = str_replace("\n", "", $line);
+        				   }
+         
+                        }
+        			 $log['users'] = $users; 
+        		 }
+
+         
+         break;
     	
     	 case('update'):
         	$state = $_POST['state'];
@@ -60,6 +106,7 @@ require_once('../scripts/config.php');
                         }
         			 $log['text'] = $text; 
         		 }
+			
         	  
              break;
     	 

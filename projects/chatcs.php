@@ -17,7 +17,7 @@
     <script type="text/javascript" src="../scripts/chat.js"></script>
     
     	<script type="text/javascript">
-    
+		 setInterval('chat.updateUsers()', 1200)
         // ask user for name with popup prompt    
         var name = prompt("Enter your chat name:", " ");
         
@@ -32,15 +32,14 @@
     	    	
     	// kick off chat
         var chat =  new Chat();
-        chat.logIn(name);    
+        chat.logIn(name); 
+           
 
-
+		window.onbeforeunload=function(e) {
+        	chat.logOut(name);
+		}
         
     	$(function() {
-
-	    	window.onunload = function(e){
-        	chat.logOut(name);
-        }
     		 
     		 // watch textarea for key presses
              $("#sendie").keydown(function(event) {  
@@ -129,22 +128,6 @@
         <p id="name-area"></p> </div>
         
         <div id="chat-users"> <h2> Whos Online </h2>
-        
-        
-		<?php
-		require_once '../scripts/config.php';
-		$allPostsQuery = mysql_query("select * from online_users");
-		if(mysql_num_rows($allPostsQuery) < 1) {
-		    echo "No comments were found!";
-		} else {
-		    while($users = mysql_fetch_assoc($allPostsQuery)) {
-		    	echo "<span class = users>";
-				echo "{$users['username']} <br>";
-		    	echo "</span>";
-				
-		            }
-		}
-		?>
 		    	
         
         
@@ -153,7 +136,7 @@
         <div id="chat-wrap"><div id="chat-area"></div></div>
         
         <form id="send-message-area">
-            <p>Message: </p>
+
             <textarea id="sendie" maxlength = '100' ></textarea> 
 
         </form>
