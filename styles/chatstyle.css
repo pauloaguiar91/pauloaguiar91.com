@@ -1,0 +1,90 @@
+textarea {
+	resize:none;
+}
+
+
+
+h2 {
+	color: #428BCA;
+	font: 30px Helvetica, Sans-Serif;
+	margin: 0 0 10px 0;
+}
+
+#page-wrap {
+	width: 500px;
+	margin: 30px auto;
+	position: relative;
+}
+
+#chat-users {
+	display:block;
+	float:left;
+	border: 1px solid black;
+	height:450px;
+	width:200px;
+	margin-right:10px;
+	
+}
+
+#chat-wrap {
+	border: 1px solid #eee;
+}
+
+#chat-area {
+	display:block; 
+	float:auto;
+	height: 450px;
+	overflow: auto; 
+	border: 1px solid #666; 
+	padding:20px;
+	background: white; 
+}
+
+#chat-area span { 
+	font-weight:bold;
+	color: black; 
+
+}
+
+#chat-area p {
+	margin:0;
+	padding: 10px 10px 10px 10px; 
+	border-bottom: 1px dashed #428BCA;
+}
+
+#name-area {
+	position: absolute;
+	top: 12px; right: 0;
+	color: white;
+	font: bold 12px "Lucida Grande", Sans-Serif; text-align: right; 
+}
+   
+#name-area span {
+	color: #fa9f00;
+}
+
+#send-message-area p {
+	float: left; 
+	color: white; 
+	padding-top: 27px; 
+	font-size: 13px; 
+}
+
+#sendie {
+	border: 3px solid #999; 
+	margin-left:100px;
+	width: 500px; 
+	height:130px;
+	padding: 10px; 
+	margin-top:10px;
+	font: 12px "Lucida Grande", Sans-Serif; 
+	float: left; 
+}
+
+.users {
+	padding-left:10px;
+}
+
+#icons {
+	
+}

@@ -1,0 +1,17 @@
+[16-Aug-2013 14:05:14] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/justos91/public_html/scripts/post.php:7) in /home1/justos91/public_html/scripts/post.php on line 24
+[16-Aug-2013 14:18:54] PHP Fatal error:  Call to undefined function  location() in /home1/justos91/public_html/scripts/post.php on line 25
+[16-Aug-2013 14:19:59] PHP Fatal error:  Call to undefined function  http_redirect() in /home1/justos91/public_html/scripts/post.php on line 25
+[16-Aug-2013 14:20:21] PHP Fatal error:  Call to undefined function  http_redirect() in /home1/justos91/public_html/scripts/post.php on line 25
+[16-Aug-2013 14:20:41] PHP Fatal error:  Call to undefined function  http_redirect() in /home1/justos91/public_html/scripts/post.php on line 25
+[16-Aug-2013 14:21:22] PHP Fatal error:  Call to undefined function  http_redirect() in /home1/justos91/public_html/scripts/post.php on line 25
+[16-Aug-2013 14:23:04] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/justos91/public_html/scripts/post.php:7) in /home1/justos91/public_html/scripts/post.php on line 25
+[16-Aug-2013 14:23:48] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/justos91/public_html/scripts/post.php:7) in /home1/justos91/public_html/scripts/post.php on line 25
+[16-Aug-2013 19:32:13] PHP Catchable fatal error:  Object of class DateTime could not be converted to string in /home1/justos91/public_html/scripts/post.php on line 26
+[16-Aug-2013 14:32:50] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/justos91/public_html/scripts/post.php:7) in /home1/justos91/public_html/scripts/post.php on line 26
+[16-Aug-2013 14:43:30] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/justos91/public_html/scripts/post.php:7) in /home1/justos91/public_html/scripts/post.php on line 26
+[16-Aug-2013 14:44:10] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/justos91/public_html/scripts/post.php:2) in /home1/justos91/public_html/scripts/post.php on line 21
+[16-Aug-2013 14:46:56] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/justos91/public_html/scripts/post.php:7) in /home1/justos91/public_html/scripts/post.php on line 26
+[20-Aug-2013 17:34:00] PHP Parse error:  syntax error, unexpected T_IF in /home1/justos91/public_html/scripts/post.php on line 26
+[20-Aug-2013 19:16:20] PHP Parse error:  syntax error, unexpected T_ELSE in /home1/justos91/public_html/scripts/post.php on line 23
+[20-Aug-2013 19:16:59] PHP Parse error:  syntax error, unexpected T_ELSEIF in /home1/justos91/public_html/scripts/post.php on line 23
+[20-Aug-2013 19:17:18] PHP Parse error:  syntax error, unexpected '}' in /home1/justos91/public_html/scripts/post.php on line 32

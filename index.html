@@ -1,42 +1,102 @@
-<!DOCTYPE HTML>
 
-<HTML>
-	<LINK type = "text/css" rel="stylesheet" href="misc/css.css"/>
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Simple redirect to mobile page if the screen size is obviously too small to be a monitor... aka a smartphone or tablet -->
+	<script type="text/javascript">
+        if (screen.width < 800) {
+            window.location = "http://www.m.pauloaguiar91.com/";
+        }
+	</script>
+	
+	<head>
+    <title>Homepage</title>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A webpage dedicated to Paulo Aguiar's software and projects.">
+    <meta name="author" content="Paulo Aguiar">
+    
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="styles/styles.css" rel="stylesheet">
+    <script type="text/javascript" src="scripts/jquery-1.10.2.min.js"></script>
 
-    <HEAD>
-             <TITLE>Paulo Aguiar</TITLE>
-	</HEAD>
+	</head>
 
-		   <BODY style = "text-align:center;">
-		     	<TABLE id = "navbar">
-		     	<TR><TD > |<A href = "index.html"> Home </A> | <A href = "about.html"> About Me </A> | <A href = "projects.html"> Projects </A> | <A href = "blog.html"> Blog </A> | <A href = "play.html"> Play </A> |</TD>
-		    	</TR>
-		        </TABLE>
-		        <DIV ID = "seperator"> </DIV>
+<body>
 
-		        <TABLE id = "tableC" style =  "width:100%; background-color: #cccccc; opacity: 0.6;">
+    <!-- Fixed navbar -->
+	<div class="navbar navbar-fixed-top">
+		<div class="container">
+        	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			</button>
+        
+        <a class="navbar-brand" href="index.html">pauloaguiar91.com</a>
+        	<div class="nav-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="blog.php">Blog</a></li>
+					<li><a href="misc/paresume.pdf">Resume</a></li>
+					<li><a href="projects/index.html"> Projects </li></a>
+				</ul>
+				
+	          <div class = "socialLinks"> 
+	            <a href = "https://github.com/pauloaguiar91"><img src = "img/github.png" /> </a>
+	            <a href = "https://www.facebook.com/paulo.aguiar91"><img border="0"src = "img/facebook.gif" /> </a>
+	            <a href = "https://twitter.com/PauloAguiar91"><img src = "img/twitter.gif" /> </a>
+	            <a href = "https://plus.google.com/108964831820304030474/posts"><img src = "img/gplus.png" /> </a>
+	            <a href = "http://www.linkedin.com/pub/paulo-aguiar/52/aa/294"><img src = "img/linkedin.png" /> </a>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+    
+		<div class = "feature"> 
+			<div class="slideshow">
+				<img src="img/game2dfeature.png"  />
+				<img src="img/salesappfeature.png" />
+				<img src="img/pauloaguiar91.png" /> 
+			</div>
+		</div>
 
-  <THEAD> <TD> Latest Project: </TD> </THEAD>
+      <div class="container">
+		  <div class="row">
+			  <div class = "col-lg-4">
+				  <h1>Welcome</h1>
+				  <span class = "text">Welcome to my page. If your looking to get to know a bit more about me, or just get in contact with me then click About in the navigation bar. This site is powered with the latest web standards including jQuery, and PHP!
+				  </span>
+				  <div class = "divider"></div>
+			  </div>
+			  
+			  <div class = "col-lg-4">
+				  <h1>Current:</h1>
+				  <span class = "text">   The site still has a lot of work to be done, but the goal is to keep it simple. Im adding new content as well as features throughout the whole site for the next week. Comment system complete, now onto jQuery effects & more sparkles.
+				  </span>
+				  <div class = "divider"></div>
+			  </div>
+			  
+		      <div class ="col-lg-4">
+	         <a href = "blog.html"> <h1>Blog: August 23 </h1> </a>
+	         <span class = "text">  Over the past week I have been looking into getting back with into Android development. Currently looking at a few open source IM projects around the web then I'll be getting to work on improving... </span>
+	          <div class = "divider"></div>
+	      </div>
+	    </div>
+	
+	    </div> <!-- /container -->
+	    
+    <footer> Paulo Aguiar (2013) </footer>      
+    
+	<script type="text/javascript" src="scripts/jQuery.js"></script>
+    <script type="text/javascript" src="http://malsup.github.com/jquery.cycle.all.js"></script>
+    
+    <!-- Cycle Script-->
+	<script type="text/javascript">
+	    $('.slideshow').cycle({
+	    fx: 'fade' // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+	  });
+	</script>
 
-  <TD>"Game2D" <BR><img style ="width:200px; height:100px" src = "img/example.jpg" ></TD>
-  </TABLE>
- <center>
-  	 <H1 class = "head"> Homepage</H1> <DIV id = "home">
-        	<H1>Welcome:</H1>
-        	<P> Welcome to my page. If your looking to get to know a bit more about me, or just get in contact with me then click About Me in the navigation bar. <BR> <BR>
-
-        		There are dynamic things to do all over the site! click around to find them.<P>
-
-    <H1>Latest Updates:</H1> 
-        <P> May 19 2013 <p>
-          <ul>
-            <li> Removed construction banners</li> 
-              <li> </li> 
-
-  </DIV> <BR>
-		          Paulo Aguiar
-		   </BODY> </center>
-    <script src="scripts/jQuery.js"></script>
-	<script type='text/javascript' src='scripts/homeScript.js'></script>
-    <link href="/pa91.ico" rel="shortcut icon" type="image/x-icon" />
-</HTML>
+</body>
+</html>

@@ -1,0 +1,20 @@
+.ui-bar-a {
+	color:white;
+}
+
+a.ui-link:visited {
+	color:white;
+}
+
+#navbar {
+	display:block;
+	text-align: center;
+}
+
+.fullimg {
+	width:99%;
+} 
+
+#projects {
+	text-align: center;
+}
